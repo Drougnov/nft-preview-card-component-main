@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  color: hsl(215, 51%, 70%);
+}
+main {
+  background: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  max-width: 350px;
+  border-radius: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 0 2rem 0 hsla(218, 52%, 9%, 0.747);
+}
+main h2 {
+  margin: 1.2rem 0;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+main h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+main #images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#images #equallibrium {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  vertical-align: top;
+}
+#images .layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#view {
+  width: 3rem;
+  visibility: hidden;
+}
+#card #images:hover .layer {
+  background: hsla(178, 100%, 50%, 0.418);
+}
+#card #images:hover #view {
+  visibility: visible;
+}
+#time {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
+  justify-content: space-between;
+}
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.left span {
+  color: hsl(178, 100%, 50%);
+}
+#creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1.2rem;
+}
+#creator > img {
+  max-width: 2rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#creator p span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#creator p span:hover {
+  color: hsl(178, 100%, 50%);
+}
