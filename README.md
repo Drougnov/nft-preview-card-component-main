@@ -14,7 +14,7 @@ Here is the link of the challange-
 https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
 
 Here is the solution site url-
-https://drougnov.github.io/nft-previw-card-component-main/
+https://drougnov.github.io/nft-preview-card-component-main/
 
 ## Built with
 
