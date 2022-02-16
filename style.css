@@ -115,6 +115,13 @@ body {
 .card__creator p a:hover {
   color: hsl(178, 100%, 50%);
 }
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+footer a {
+  color: hsl(178, 100%, 50%);
+}
 footer a:hover {
   text-decoration: none;
   color: white;
