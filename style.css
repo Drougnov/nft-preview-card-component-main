@@ -6,44 +6,38 @@
 }
 body {
   min-height: 100vh;
+  color: hsl(215, 51%, 70%);
   background: hsl(217, 54%, 11%);
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-family: "Outfit", sans-serif;
-  color: hsl(215, 51%, 70%);
 }
-main {
+.card {
+  max-width: 320px;
   background: hsl(216, 50%, 16%);
   padding: 1.5rem;
-  margin: 1rem;
-  margin-bottom: 2rem;
-  max-width: 350px;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem;
   border-radius: 1rem;
-  font-size: 1rem;
-  box-shadow: 0 0 2rem 0 hsla(218, 52%, 9%, 0.747);
+  overflow: hidden;
+  box-shadow: 0 1.5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
 }
-main h2 {
-  margin: 1.2rem 0;
-  color: hsl(0, 0%, 100%);
-  cursor: pointer;
-}
-main h2:hover {
-  color: hsl(178, 100%, 50%);
-}
-main #images {
-  width: 100%;
-  height: 100%;
+.card__images {
+  display: block;
   position: relative;
 }
-#images #equallibrium {
+.card__images #equilibrium {
   width: 100%;
-  cursor: pointer;
+  height: 100%;
   border-radius: 0.5rem;
   vertical-align: top;
+  cursor: pointer;
 }
-#images .layer {
+.card__images-layer {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -55,49 +49,73 @@ main #images {
   background-color: transparent;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-#view {
-  width: 3rem;
-  visibility: hidden;
+.card__images-layer #view {
+  opacity: 0;
+  transition: all 0.3s linear;
 }
-#card #images:hover .layer {
-  background: hsla(178, 100%, 50%, 0.418);
+.card__images:hover .card__images-layer {
+  background: hsla(178, 100%, 50%, 0.4);
 }
-#card #images:hover #view {
-  visibility: visible;
+.card__images:hover #view {
+  opacity: 1;
 }
-#time {
+.card__title {
+  text-decoration: none;
+}
+.card__title h1 {
+  width: max-content;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card__time {
   display: flex;
   align-items: center;
-  margin: 1.2rem 0;
   justify-content: space-between;
+  margin: 1rem 0;
 }
-.left,
-.right {
+.card__time-left,
+.card__time-right {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.left span {
+.card__time-left span {
   color: hsl(178, 100%, 50%);
+  font-weight: 700;
 }
-#creator {
+.card hr {
+  display: block;
+  border: none;
+  height: 1px;
+  background: hsl(215, 32%, 27%);
+}
+.card__creator {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-top: 1px solid hsl(215, 32%, 27%);
-  padding-top: 1.2rem;
+  gap: 0.75rem;
+  margin: 1rem 0;
 }
-#creator > img {
+.card__creator img {
   max-width: 2rem;
-  border: 2px solid hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  cursor: pointer;
 }
-#creator p span {
+.card__creator p a {
   color: hsl(0, 0%, 100%);
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
 }
-#creator p span:hover {
+.card__creator p a:hover {
   color: hsl(178, 100%, 50%);
+}
+footer a:hover {
+  text-decoration: none;
+  color: white;
 }

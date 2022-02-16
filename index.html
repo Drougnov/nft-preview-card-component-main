@@ -8,33 +8,36 @@
   <title>Frontend Mentor | NFT preview card component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color:hsl(178, 100%, 50%);text-decoration: none; }
+    .attribution a { color:hsl(178, 100%, 50%);}
   </style>
 </head>
 <body>
-  <main id="card">
-    <section id="images">
-        <img src="./images/image-equilibrium.jpg" alt="equilibrium" id="equallibrium">
-        <div class="layer">
-          <img src="./images/icon-view.svg" alt="view" id="view">
+  <main class="card">
+    <a href="#" aria-label="equilibrium image" class="card__images">
+        <img src="./images/image-equilibrium.jpg" alt="an svg of equilibrium" id="equilibrium">
+        <div class="card__images-layer">
+          <img src="./images/icon-view.svg" alt="an icon of eye/view" id="view">
         </div>
-    </section>
-    <h2>Equilibrium #3429</h2>
+    </a>
+    <a href="#" aria-label="equilibrium title" class="card__title">
+      <h1>Equilibrium #3429</h1>
+    </a>
     <p>Our Equilibrium collection promotes balance and calm.</p>
-    <section id="time">
-        <div class="left">
-          <img src="./images/icon-ethereum.svg" alt="ethereum">
+    <div class="card__time">
+        <div href="#" aria-label="ethereum" class="card__time-left">
+          <img src="./images/icon-ethereum.svg" alt="an svg of ethereum">
           <span>0.041 ETH</span>
         </div>
-        <div class="right">
-          <img src="./images/icon-clock.svg" alt="clock">
+        <div class="card__time-right">
+          <img src="./images/icon-clock.svg" alt="an icon of clock">
           <span>3 days left</span>
         </div>
-    </section>
-    <section id="creator">
-        <img src="./images/image-avatar.png" alt="avatar">
-        <p>Creation of <span>Jules Wyvern</span></p>
-      </section>
+    </div>
+    <hr>
+    <div class="card__creator">
+        <img src="./images/image-avatar.png" alt="a guy's portrait">
+        <p>Creation of <a href="#" aria-label="Jules wyvern's profile">Jules Wyvern</a></p>
+    </div>
   </main>
   <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
